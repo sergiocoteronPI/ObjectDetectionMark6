@@ -33,7 +33,7 @@ Se necesitará:
 * opencv
 * Seguro que más cosas poco a poco
 
-# ¿De dónde son los datos?
+# De dónde y cómo obtener los datos.
 
 He usado las imágenes de http://cocodataset.org/#home.
 
@@ -49,4 +49,14 @@ A continuación descargamos las etiquetas.
 Si hay alguna duda en la página del dataset COCO viene todo muy bien detallado, aún así aquí explicaremos como convertir los datos para que los pueda leer el programa.
 
 
-# ¿Que formato tienen los datos?
+# Como transformar los datos para entrenar.
+
+# Como trabaja el modelo.
+
+Como ya se ha comentado el modelo está inspirado en YOLO. YOLO toma una imagen y la divide en regiones que llamaremos celdas. La red neuronal se encarga de transformar una imagen de tamaño 416x416 en 13x13. Para cada celda tendremos b cajas posibles y dentro de cada caja encontraremos un vector de probabilidades de clase, otro vector de coordenadas y por ultimo un número entre 0 y 1 que nos indicará como de certeras son para esa caja las coordenadas predichas.
+
+* Recomendar alguna página del funcionamiento de YOLO.
+
+Lo que he hecho ha sido modificar la estructura. YOLO predice un total de H*W*B*(bbox) predicciones pues he transformado esto en HxWxC(1+B*(1+4))
+
+# Resultados obtenidos.
