@@ -35,6 +35,18 @@ Se necesitará:
 
 # ¿De dónde son los datos?
 
-He usado las imágenes de http://cocodataset.org/#home
+He usado las imágenes de http://cocodataset.org/#home.
+
+Para obtener los datos utilizados se accede a http://cocodataset.org/#download y se descargan las imágenes:
+
+* http://images.cocodataset.org/zips/train2017.zip
+* http://images.cocodataset.org/zips/val2017.zip
+
+A continuación descargamos las etiquetas.
+
+* http://images.cocodataset.org/annotations/annotations_trainval2017.zip
+
+Si hay alguna duda en la página del dataset COCO viene todo muy bien detallado, aún así aquí explicaremos como convertir los datos para que los pueda leer el programa.
+
 
 # ¿Que formato tienen los datos?
