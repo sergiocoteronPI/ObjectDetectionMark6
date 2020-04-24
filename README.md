@@ -2,8 +2,8 @@
 
 Creando readme con stilo
 
-*puntos
-*puntos
-*puntos
+* puntos
+* puntos
+* puntos
 
-#Texto gigante
+# Texto gigante
