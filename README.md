@@ -57,6 +57,6 @@ Como ya se ha comentado el modelo está inspirado en YOLO. YOLO toma una imagen 
 
 * Recomendar alguna página del funcionamiento de YOLO.
 
-Lo que he hecho ha sido modificar la estructura. YOLO predice un total de H*W*B*(bbox) predicciones pues he transformado esto en HxWxC(1+B*(1+4))
+Lo que he hecho ha sido modificar la estructura. YOLO predice un total de H x W x B*(1 + 4 + C) predicciones pues he transformado esto en H x W x C*(1 + B*(1+4))
 
 # Resultados obtenidos.
