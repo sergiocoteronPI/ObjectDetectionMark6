@@ -51,6 +51,14 @@ Si hay alguna duda en la página del dataset COCO viene todo muy bien detallado,
 
 # Como transformar los datos para entrenar.
 
+El programa lee txt. Para cada imagen se crea un txt con la siguiente estructura.
+
+nombreImagen.txt
+rutaImagen,etiqueta1,coordx1,coordy1,coordw1,coordh1\n
+rutaImagen,etiqueta2,coordx2,coordy2,coordw2,coordh2\n
+
+    .        .        .
+
 # Como trabaja el modelo.
 
 Como ya se ha comentado el modelo está inspirado en YOLO. YOLO toma una imagen y la divide en regiones que llamaremos celdas. La red neuronal se encarga de transformar una imagen de tamaño 416x416 en 13x13. Para cada celda tendremos b cajas posibles y dentro de cada caja encontraremos un vector de probabilidades de clase, otro vector de coordenadas y por ultimo un número entre 0 y 1 que nos indicará como de certeras son para esa caja las coordenadas predichas.
