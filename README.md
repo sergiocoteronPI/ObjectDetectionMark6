@@ -54,6 +54,7 @@ Si hay alguna duda en la página del dataset COCO viene todo muy bien detallado,
 El programa lee txt. Para cada imagen se crea un txt con la siguiente estructura.
 
 nombreImagen.txt
+
 rutaImagen,etiqueta1,coordx1,coordy1,coordw1,coordh1\n
 rutaImagen,etiqueta2,coordx2,coordy2,coordw2,coordh2\n
 
